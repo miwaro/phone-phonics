@@ -1,0 +1,18 @@
+.ringtone {
+    height: 200px;
+    width: 200px;
+    border: 2px solid white;
+
+    p {
+        color: white;
+    }
+}
+
+.ringtones {
+    display: grid;
+    max-width: 1000px;
+    padding: 20px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
