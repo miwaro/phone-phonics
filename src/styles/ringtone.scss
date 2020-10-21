@@ -1,18 +1,77 @@
-.ringtone {
-    height: 200px;
-    width: 200px;
-    border: 2px solid white;
-
-    p {
-        color: white;
-    }
+.main-container {
+  padding-top: 40px;
 }
 
-.ringtones {
-    display: grid;
-    max-width: 1000px;
-    padding: 20px;
-    margin: 0 auto;
+.ringtone-grid {
+  display: grid;
+  max-width: 1356px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.ringtone-container {
+  position: relative;
+  height: 480px;
+  width: 320px;
+  border: 2px solid white;
+  border-radius: 6%;
+}
+
+img {
+  border-radius: 6%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1;
+}
+
+.ringtone-title {
+  position: fixed;
+  margin: auto;
+}
+
+.play-button {
+  position: absolute;
+  background: rgba(145, 182, 224, 0.6);
+  top: 45%;
+  right: 44%;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.play-button:hover {
+  background: rgba(64, 127, 199, 0.5);
+  color: #e8491d;
+}
+
+.download-link {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-decoration: none;
+  opacity: 0.6;
+  padding: 4px;
+  border: 2px solid #e8491d;
+  font-size: 20px;
+  color: #fff;
+  background: rgba(64, 127, 199, 0.1);
+}
+
+.download-link:hover {
+  opacity: 1;
+}
+
+.MuiButton-containedSizeLarge {
+  padding: 8px 22px;
+  font-size: 0.9375rem;
+}
+
+@media (max-width: 900px) {
+  .ringtone-grid {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+  }
 }

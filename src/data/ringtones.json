@@ -1,18 +1,39 @@
 [
     {
         "id": 1,
-        "path": "/audio/audioclips/addPlayer.wav",
-        "title": "Ringtone Name",
-        "download": "download"
+        "info": "Sound designed by Michael Rooze",
+        "path": "audio/audioclips/addPlayer.wav",
+        "title": "Sonic Bliss",
+        "img": "img/nature.jpg"
     },
     {
         "id": 2,
         "path": "audio/audioclips/addPlayers.wav",
-        "title": "Ringtone Name 2"
+        "title": "Radiant River",
+        "img": "img/nature2.jpg"
     },
     {
         "id": 3,
         "path": "audio/audioclips/arrow.wav",
-        "title": "Ringtone Name 3"
+        "title": "Harmonious Monk",
+        "img": "img/nature3.jpg"
+    },
+    {
+        "id": 4,
+        "path": "audio/audioclips/arrow.wav",
+        "title": "Forest Sound",
+        "img": "img/nature4.jpg"
+    },
+    {
+        "id": 5,
+        "path": "audio/audioclips/arrow.wav",
+        "title": "City Calm",
+        "img": "img/nature5.jpg"
+    },
+    {
+        "id": 6,
+        "path": "audio/audioclips/arrow.wav",
+        "title": "Ion Fortress",
+        "img": "img/nature6.jpg"
     }
 ]
