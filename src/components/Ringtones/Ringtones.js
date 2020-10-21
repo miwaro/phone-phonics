@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
+import { NavLink } from "react-router-dom";
 
 const ringtonesJSON = require('../../data/ringtones.json');
 
@@ -8,11 +9,6 @@ const RingtonePage = () => {
     const playRingtone = audioFilePath => {
         const audio = new Audio(audioFilePath);
         audio.play();
-    }
-
-    const downloadRingtone = downloadFile => {
-        const download = new Audio(downloadFile);
-        download.play();
     }
     
     return (
@@ -28,14 +24,7 @@ const RingtonePage = () => {
                         >
                             {ringtone.title}
                         </Button>
-                        <Button
-                            size="small"
-                            variant="contained"
-                            color='secondary'
-                            onClick={() => playRingtone(ringtone.download)}
-                        >
-                            Download Ringtone
-                        </Button>
+                        <NavLink to={ringtone.path} target="_blank" download>Download</NavLink>
                     </div>
                 ))}
 
