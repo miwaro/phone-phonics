@@ -1,17 +1,17 @@
 [
     {
         "id": 1,
-        "path": "src/audioclips/addPlayer.wav",
-        "title": "Test Ringtone"
+        "path": "/audio/audioclips/addPlayer.wav",
+        "title": "Ringtone Name"
     },
     {
         "id": 2,
-        "fileName": "src/audioclips/addPlayers.wav",
-        "title": "Test Ringtone 2"
+        "path": "audio/audioclips/addPlayers.wav",
+        "title": "Ringtone Name 2"
     },
     {
         "id": 3,
-        "fileName": "src/audioclips/arrow.wav",
-        "title": "Test Ringtone 3"
+        "path": "audio/audioclips/arrow.wav",
+        "title": "Ringtone Name 3"
     }
 ]
