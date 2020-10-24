@@ -3,7 +3,7 @@ body{
     padding:0;
     margin:0;
     background-color:#f4f4f4;
-    background-color: black;
+    background-color: grey;
   }
   
   ul{
@@ -12,6 +12,14 @@ body{
   }
   
   /* Header **/
+
+  @mixin header-footer {
+    background:#35424a;
+    color:#ffffff;
+    padding-top:30px;
+    min-height:70px;
+  }
+
   .header-container{
     width:80%;
     margin:auto;
@@ -19,10 +27,7 @@ body{
   }
 
   header{
-    background:#35424a;
-    color:#ffffff;
-    padding-top:30px;
-    min-height:70px;
+    @include header-footer;
     border-bottom:#e8491d 3px solid;
   }
   
@@ -67,12 +72,10 @@ body{
     font-weight:bold;
   }
   
-  footer{
-    padding:20px;
-    margin-top:20px;
-    color:#fff;
-    background-color:#e8491d;
-    text-align: center;
+  footer {
+    @include header-footer;
+    border-top: #e8491d 3px solid;
+    margin-top: 40px;
   }
   
   /* Media Queries */

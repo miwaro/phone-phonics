@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer";
 import RingtonePage from "./components/Ringtones/Ringtones";
 import TextPage from "./components/TextAlertPage/TextAlerts";
 import RequestPage from "./components/Requests/Requests";
@@ -13,6 +14,7 @@ export default function App() {
         <Route exact path="/" component={RingtonePage} />
         <Route path="/text-alert-page" component={TextPage} />
         <Route path="/request-page" component={RequestPage} />
+        <Footer />  
     </Router>
   );
 }
