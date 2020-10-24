@@ -48,6 +48,10 @@ img:hover {
   color: #e8491d;
 }
 
+*:focus {
+  outline: none !important;
+}
+
 .download-link {
   position: absolute;
   bottom: 10px;
