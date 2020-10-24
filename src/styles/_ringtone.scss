@@ -1,13 +1,16 @@
+$PrimaryColor: #e8491d;
+
 .main-container {
   padding-top: 40px;
 }
 
 .ringtone-grid {
   display: grid;
+  justify-items: center;
   max-width: 1356px;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 25px;
 }
 
 .ringtone-container {
@@ -34,18 +37,20 @@ img:hover {
 }
 
 .play-button {
+  color: #FFF;
   position: absolute;
-  background: rgba(145, 182, 224, 0.6);
-  top: 45%;
-  right: 44%;
-  border: 1px solid black;
+  background: rgba(178, 202, 230, 0.2);
+  top: 41%;
+  right: 41%;
+  border: 2px solid #FFF;
   border-radius: 50%;
-  padding: 10px;
-}
-
-.play-button:hover {
-  background: rgba(64, 127, 199, 0.5);
-  color: #e8491d;
+  padding: 20px;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.2);
+    border: 2px solid $PrimaryColor;
+    color: $PrimaryColor;
+  }
 }
 
 *:focus {
@@ -59,14 +64,13 @@ img:hover {
   text-decoration: none;
   opacity: 0.6;
   padding: 4px;
-  border: 2px solid #e8491d;
+  border: 2px solid $PrimaryColor;
   font-size: 20px;
   color: #fff;
   background: rgba(64, 127, 199, 0.1);
-}
-
-.download-link:hover {
-  opacity: 1;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .MuiButton-containedSizeLarge {
@@ -74,7 +78,7 @@ img:hover {
   font-size: 0.9375rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1375px) {
   .ringtone-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }

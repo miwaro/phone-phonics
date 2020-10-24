@@ -1,11 +1,10 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 
-
 const Header = () => {
     return (
         <header>
-            <div className="container">
+            <div className="header-container">
                 <div id="branding">
                     <h1><span className="highlight">Phone</span>Phonics</h1>
                 </div>
@@ -18,7 +17,6 @@ const Header = () => {
                 </nav>
             </div>
         </header>
-
     )
 }
 

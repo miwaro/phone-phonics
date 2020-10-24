@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useCallback } from "react";
 import Button from "@material-ui/core/Button";
 import { NavLink } from "react-router-dom";
 import PlayArrowIcon from "@material-ui/icons/PlayArrow";
@@ -6,14 +6,10 @@ import StopIcon from "@material-ui/icons/Stop";
 
 const RingtoneCard = (ringtone) => {
 
-
   const [value, setValue] = useState(false);
-  // const [audioTime, setAudioTime] = useState(0);
-
   const audio = new Audio(ringtone.path);
 
   const toggle = useCallback(() => {
-
       toggleAudio()
       setValue((v) => !v);
       console.log(audio.paused)
@@ -46,7 +42,6 @@ const RingtoneCard = (ringtone) => {
             color: "#FFF",
           }}
           size="large"
-          variant="outlined"
         >
           {ringtone.title}
         </Button>

@@ -1,16 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render }  from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import './styles/styles.scss';
 
-
-import './styles/header.scss';
-import './styles/mainStyles.scss';
-import './styles/ringtone.scss';
-
-
-ReactDOM.render(
+render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
