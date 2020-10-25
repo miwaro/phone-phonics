@@ -5,7 +5,7 @@ export default function Footer() {
         <footer>
             <div className="header-container">
                 <div id="branding">
-                    <h1><span className="highlight">Footer</span></h1>
+                    <h3><span className="highlight">&copy; 2020</span></h3>
                 </div>
             </div>
         </footer>

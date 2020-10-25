@@ -73,7 +73,9 @@ body{
   }
   
   footer {
-    @include header-footer;
+    background:#35424a;
+    color:#ffffff;
+    min-height:70px;
     border-top: #e8491d 3px solid;
     margin-top: 40px;
   }

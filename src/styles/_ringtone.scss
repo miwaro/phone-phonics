@@ -11,6 +11,15 @@ $PrimaryColor: #e8491d;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 25px;
+  @media only screen and (max-width: 1375px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media only screen and (max-width: 1050px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media only screen and (max-width: 890px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .ringtone-container {
@@ -19,21 +28,33 @@ $PrimaryColor: #e8491d;
   width: 320px;
   border: 2px solid white;
   border-radius: 6%;
+  @media only screen and (max-width: 1050px) {
+    width: 425px;
+  }
+  @media only screen and (max-width: 890px) {
+    width: 625px;
+  }
+  @media only screen and (max-width: 650px) {
+    width: 400px;
+  }
 }
 
 img {
+  max-height: 480px;
   border-radius: 6%;
-  z-index: -1;
-  opacity: 0.5;
-}
-
-img:hover {
-  opacity: 1;
-}
-
-.ringtone-title {
-  position: fixed;
-  margin: auto;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+  }
+  @media only screen and (max-width: 1050px) {
+    width: 425px;
+  }
+  @media only screen and (max-width: 890px) {
+    width: 625px;
+  }
+  @media only screen and (max-width: 650px) {
+    width: 400px;
+  }
 }
 
 .play-button {
@@ -71,15 +92,9 @@ img:hover {
   &:hover {
     opacity: 1;
   }
-}
-
-.MuiButton-containedSizeLarge {
-  padding: 8px 22px;
-  font-size: 0.9375rem;
-}
-
-@media (max-width: 1375px) {
-  .ringtone-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+  @media only screen and (max-width: 1050px) {
+    bottom: 20px;
+  right: 30px;
   }
 }
+
