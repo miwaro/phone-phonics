@@ -1,12 +1,13 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
+import PhoneIcon from '@material-ui/icons/Phone';
 
 const Header = () => {
     return (
         <header>
             <div className="header-container">
                 <div id="branding">
-                    <h1><span className="highlight">Phone</span>Phonics</h1>
+                    <h1><span className="highlight">Phone</span><PhoneIcon />Phonics</h1>
                 </div>
                 <nav>
                     <ul className="highlight">

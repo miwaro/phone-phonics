@@ -1,9 +1,14 @@
+$PrimaryColor: #10da2bd3;
+$SecondaryColor: #207db8;
+
 body{
     font: 15px/1.5 Arial, Helvetica,sans-serif;
     padding:0;
     margin:0;
-    background-color:#f4f4f4;
-    background-color: grey;
+    background-image: url("/img/wood.jpg");
+    background-size: cover;
+    // background: rgb(2,0,36);
+    // background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(140,140,140,1) 0%, rgba(204,204,204,1) 100%);
   }
   
   ul{
@@ -14,21 +19,22 @@ body{
   /* Header **/
 
   @mixin header-footer {
-    background:#35424a;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,125,184,1) 58%, rgba(0,212,255,1) 100%);
     color:#ffffff;
     padding-top:30px;
     min-height:70px;
   }
 
   .header-container{
-    width:80%;
+    width:70%;
     margin:auto;
     overflow:hidden;
   }
 
   header{
     @include header-footer;
-    border-bottom:#e8491d 3px solid;
+    border-bottom: $PrimaryColor 3px solid;
   }
   
   header a{
@@ -46,7 +52,7 @@ body{
 
   
   .current {
-    color:#e8491d;
+    color:$PrimaryColor;
   }
   
   header #branding{
@@ -63,7 +69,7 @@ body{
   }
   
   header .highlight, header .current a{
-    color:#e8491d;
+    color:$PrimaryColor;
     font-weight:bold;
   }
   
@@ -73,11 +79,16 @@ body{
   }
   
   footer {
-    background:#35424a;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,125,184,1) 58%, rgba(0,212,255,1) 100%);
     color:#ffffff;
     min-height:70px;
-    border-top: #e8491d 3px solid;
+    border-top: $PrimaryColor 3px solid;
     margin-top: 40px;
+    h3 {
+      display: flex;
+      justify-content: center;
+    }
   }
   
   /* Media Queries */
@@ -95,18 +106,18 @@ body{
       padding-bottom:20px;
     }
   
-    #showcase h1{
-      margin-top:40px;
-    }
+  //   #showcase h1{
+  //     margin-top:40px;
+  //   }
   
-    #newsletter button, .quote button{
-      display:block;
-      width:100%;
-    }
+  //   #newsletter button, .quote button{
+  //     display:block;
+  //     width:100%;
+  //   }
   
-    #newsletter form input[type="email"], .quote input, .quote textarea{
-      width:100%;
-      margin-bottom:5px;
-    }
+  //   #newsletter form input[type="email"], .quote input, .quote textarea{
+  //     width:100%;
+  //     margin-bottom:5px;
+  //   }
   }
   
