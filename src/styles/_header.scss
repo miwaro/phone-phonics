@@ -7,8 +7,6 @@ body{
     margin:0;
     background-image: url("/img/wood.jpg");
     background-size: cover;
-    // background: rgb(2,0,36);
-    // background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(140,140,140,1) 0%, rgba(204,204,204,1) 100%);
   }
   
   ul{
@@ -80,7 +78,7 @@ body{
   
   footer {
     background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,125,184,1) 58%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,125,184,1) 58%, rgba(0,212,255,1) 100%);
     color:#ffffff;
     min-height:70px;
     border-top: $PrimaryColor 3px solid;

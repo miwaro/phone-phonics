@@ -10,12 +10,13 @@ const RingtoneCard = (ringtone) => {
   const audio = new Audio(ringtone.path);
 
   const toggle = useCallback(() => {
-      toggleAudio()
+      toggleAudio();
       setValue((v) => !v);
-      console.log(audio.paused)
   }, []);
 
-  function toggleAudio() {
+
+  const toggleAudio = () => {
+
     if (audio.paused) {
       audio.play();
     } else {
@@ -23,6 +24,8 @@ const RingtoneCard = (ringtone) => {
       audio.currentTime = 0;
     }
   }
+
+
 
   audio.addEventListener("ended", function() {
     if ("ended") {
@@ -37,9 +40,10 @@ const RingtoneCard = (ringtone) => {
         <Button
           style={{
             position: "absolute",
-            top: 10,
-            left: 10,
+            top: 15,
+            left: 15,
             color: "#FFF",
+            fontStyle: "italic"
           }}
           size="large"
         >
