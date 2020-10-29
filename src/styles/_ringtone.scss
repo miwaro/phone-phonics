@@ -1,9 +1,23 @@
 $PrimaryColor: #10da2bd3;
 $SecondaryColor: #207db8;
+// $SecondaryColor: #6720b8;
 
 .main-container {
   padding-top: 40px;
+  background-image: url("/img/wood.jpg");
+  padding-bottom: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+.main-text-container {
+  padding-top: 40px;
+  background-image: url("/img/dark-wood.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 40px;
+}
+
 
 .ringtone-grid {
   display: grid;
@@ -30,6 +44,34 @@ $SecondaryColor: #207db8;
   border: 3px solid $SecondaryColor;
   border-radius: 4%;
   box-shadow: 5px 10px 18px #585858;
+  &:hover {
+    transform: scale(1.02);
+    border: 2px solid $PrimaryColor;
+    color: $PrimaryColor;
+  }
+  @media only screen and (max-width: 1050px) {
+    width: 425px;
+  }
+  @media only screen and (max-width: 890px) {
+    width: 625px;
+  }
+  @media only screen and (max-width: 650px) {
+    width: 400px;
+  }
+}
+
+.text-container {
+  position: relative;
+  height: 480px;
+  width: 320px;
+  border: 3px solid $PrimaryColor;
+  border-radius: 4%;
+  &:hover {
+    transform: scale(1.02);
+    border: 2px solid $PrimaryColor;
+    color: $PrimaryColor;
+  }
+  box-shadow: 5px 10px 18px #020024;
   @media only screen and (max-width: 1050px) {
     width: 425px;
   }
@@ -44,10 +86,6 @@ $SecondaryColor: #207db8;
 img {
   max-height: 480px;
   border-radius: 3%;
-  // opacity: 0.8;
-  // &:hover {
-  //   opacity: 1;
-  // }
   @media only screen and (max-width: 1050px) {
     width: 425px;
   }

@@ -1,74 +1,86 @@
 [
     {
         "id": 1,
-        "path": "audio/audioclips/addPlayer.wav",
-        "title": "Sonic Bliss",
-        "img": "img/nature.jpg"
+        "path": "audio/texts/chadText.wav",
+        "title": "Chad Alert",
+        "img": "img/nature12.jpg",
+        "artist": "Artist: Chad Polstra"
     },
     {
         "id": 2,
         "path": "audio/audioclips/addPlayers.wav",
         "title": "Radiant River",
-        "img": "img/nature2.jpg"
+        "img": "img/nature11.jpg",
+        "artist": "Artist: Michael Rooze"
     },
     {
         "id": 3,
         "path": "audio/audioclips/Sober.wav",
         "title": "Harmonious Monk",
-        "img": "img/nature3.jpg"
+        "img": "img/nature10.jpg",
+        "artist": "Artist: Michael Rooze"
     },
     {
         "id": 4,
         "path": "audio/audioclips/ringtone_totheroh.mp3",
         "title": "Forest Sound",
-        "img": "img/nature4.jpg"
+        "img": "img/nature9.jpg",
+        "artist": "Artist: Michael Rooze"
     },
     {
         "id": 5,
         "path": "audio/audioclips/ringtone-totheroh2.mp3",
         "title": "City Calm",
-        "img": "img/nature5.jpg"
+        "img": "img/nature8.jpg",
+        "artist": "Artist: Michael Rooze"
     },
     {
         "id": 6,
         "path": "audio/audioclips/arrow.wav",
         "title": "Ion Fortress",
-        "img": "img/nature6.jpg"
+        "img": "img/nature7.jpg",
+        "artist": "Artist: Michael Rooze"
     },
     {
         "id": 7,
         "path": "audio/audioclips/arrow.wav",
         "title": "Ion Fortress",
-        "img": "img/nature7.jpg"
+        "img": "img/nature6.jpg",
+        "artist": "Artist: Michael Rooze"
     },
     {
         "id": 8,
         "path": "audio/audioclips/arrow.wav",
         "title": "Ion Fortress",
-        "img": "img/nature8.jpg"
+        "img": "img/nature5.jpg",
+        "artist": "Artist: Michael Rooze"
     },
     {
         "id": 9,
         "path": "audio/audioclips/arrow.wav",
         "title": "Ion Fortress",
-        "img": "img/nature9.jpg"
+        "img": "img/nature4.jpg",
+        "artist": "Artist: Michael Rooze"
     },
     {
         "id": 10,
         "path": "audio/audioclips/arrow.wav",
         "title": "Ion Fortress",
-        "img": "img/nature10.jpg"
+        "img": "img/nature3.jpg",
+        "artist": "Artist: Michael Rooze"
     },
     {
         "id": 11,
         "path": "audio/audioclips/arrow.wav",
         "title": "Ion Fortress",
-        "img": "img/nature11.jpg"
+        "img": "img/nature2.jpg",
+        "artist": "Artist: Michael Rooze"
     },
     {
         "id": 12,
         "path": "audio/audioclips/arrow.wav",
         "title": "Ion Fortress",
-        "img": "img/nature12.jpg"
+        "img": "img/nature.jpg",
+        "artist": "Artist: Michael Rooze"
     }
 ]

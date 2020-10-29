@@ -1,0 +1,33 @@
+
+.about-main {
+    background-image: url("/img/about-bg-2.jpg");
+    background-size: cover;
+    background-position: center; 
+    height: 78vh;
+    padding: 60px;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-header {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 25px;
+    padding: 30px;
+}
+
+.soundcloud {
+    height: 100px;
+    width: 100px;
+}
+
+.studio {
+    height: 80px;
+    width: 80px;
+}

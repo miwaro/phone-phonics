@@ -5,7 +5,6 @@ body{
     font: 15px/1.5 Arial, Helvetica,sans-serif;
     padding:0;
     margin:0;
-    background-image: url("/img/wood.jpg");
     background-size: cover;
   }
   
@@ -18,7 +17,7 @@ body{
 
   @mixin header-footer {
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,125,184,1) 58%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgb(5, 0, 102) 0%, rgba(32,125,184,1) 58%, rgb(4, 135, 161) 100%);
     color:#ffffff;
     padding-top:30px;
     min-height:70px;
@@ -78,11 +77,11 @@ body{
   
   footer {
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,125,184,1) 58%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgb(5, 0, 102) 0%, rgba(32,125,184,1) 58%, rgb(4, 155, 185) 100%);
     color:#ffffff;
     min-height:70px;
+    // margin-top: -50px;
     border-top: $PrimaryColor 3px solid;
-    margin-top: 40px;
     h3 {
       display: flex;
       justify-content: center;

@@ -5,7 +5,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer";
 import RingtonePage from "./components/Ringtones/Ringtones";
 import TextPage from "./components/TextAlertPage/TextAlerts";
-import RequestPage from "./components/Requests/Requests";
+import AboutPage from "./components/About/About";
 
 
 export default function App() {
@@ -14,7 +14,7 @@ export default function App() {
       <Header />
         <Route exact path="/" component={RingtonePage} />
         <Route path="/text-alert-page" component={TextPage} />
-        <Route path="/request-page" component={RequestPage} />
+        <Route path="/about-page" component={AboutPage} />
         <Footer />  
     </Router>
   );

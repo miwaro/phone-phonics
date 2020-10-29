@@ -1,18 +1,24 @@
-import React from 'react';
+import React from "react";
+import TextCard from "./TextCard";
 
+const textsJSON = require("../../data/texts.json");
 
-const TextPage = () => {
+const TextAlertPage = () => {
+  return (
+    <div className="main-text-container">
+      <div className="ringtone-grid">
+        {textsJSON.map((text) => (
+          <TextCard
+            key={text.id}
+            path={text.path}
+            title={text.title}
+            img={text.img}
+            artist={text.artist}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
 
-
-    return (
-        <div>
-            <div>Texts</div>
-            <div>Texts</div>
-            <div>Texts</div>
-            <div>Texts</div>
-        </div>
-
-    )
-}
-
-export default TextPage;
+export default TextAlertPage;
