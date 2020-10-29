@@ -2,8 +2,10 @@ $PrimaryColor: #10da2bd3;
 $SecondaryColor: #207db8;
 
   @mixin header-footer {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgb(5, 0, 102) 0%, rgba(32,125,184,1) 58%, rgb(4, 135, 161) 100%);
+    // background: rgb(2,0,36);
+    // background: linear-gradient(90deg, rgb(5, 0, 102) 0%, rgba(32,125,184,1) 58%, rgb(4, 135, 161) 100%);
+    background: rgb(0,24,36);
+    background: linear-gradient(87deg, rgba(0,24,36,1) 30%, rgba(16,135,218,1) 100%, rgba(140,140,140,1) 100%);
     color:#ffffff;
     padding-top:30px;
     min-height:70px;
@@ -17,12 +19,13 @@ $SecondaryColor: #207db8;
 
   header{
     @include header-footer;
-    border-bottom: 3px solid $PrimaryColor;
+    border-bottom: 2px solid $PrimaryColor;
   }
 
   h4 {
+    letter-spacing: .5px;
     margin-top: 0;
-    padding-left: 10px;
+    padding-left: 20px;
     font-style: italic;
   }
 
@@ -34,6 +37,7 @@ $SecondaryColor: #207db8;
   }
   
   header li{
+    letter-spacing: .5px;
     float:left;
     display:inline;
     padding: 10px 20px 0 20px;
@@ -57,7 +61,7 @@ $SecondaryColor: #207db8;
   }
   
   header .highlight, header .current a{
-    color:$PrimaryColor;
+   
     font-weight:bold;
   }
   

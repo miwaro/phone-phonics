@@ -6,6 +6,9 @@ import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import MusicNoteIcon from '@material-ui/icons/MusicNote';
+import AddBoxIcon from '@material-ui/icons/AddBox';
+import { Translate } from "@material-ui/icons";
 
 const RingtoneCard = (ringtone) => {
 
@@ -43,7 +46,7 @@ const RingtoneCard = (ringtone) => {
               borderRadius: 6,
               top: 15,
               left: 15,
-              opacity: .9,
+              opacity: .8,
               fontStyle: "italic",
               border: '1px solid #207db8'
             }}>
@@ -52,27 +55,34 @@ const RingtoneCard = (ringtone) => {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
+            <MusicNoteIcon fontSize='small'/>
             {ringtone.title}
           </AccordionSummary>
-        <AccordionDetails>
-          <div 
-            style={{
-              paddingTop: 10, 
-              paddingRight: 10, 
-              fontWeight: 600
-            }}
-          > 
-          {ringtone.artist}
-          </div>
-          <a rel="nofollow" href={ringtone.site} target="_blank" >
-            <img className="soundcloud" src="./img/soundcloud.png" 
-            style={{
-              height:'40px', width:'40px'
-            }} 
-            alt="soundcloud"
-            />
-          </a>
-        </AccordionDetails>
+
+          <AccordionDetails style={{paddingTop: 0, paddingBottom: 0}}>
+            <ul className='accordion-list'>
+              <li style={{transform: 'Translate(0, -30px)'}}>
+                {ringtone.artist}
+                <a rel="nofollow" href={ringtone.site} target="_blank" >
+                  <img className="soundcloud" src="./img/soundcloud.png"  alt="soundcloud"
+                    style={{
+                      transform: 'translate(0, 30px)',
+                      paddingLeft: 10,
+                      paddingBottom: 20,
+                      height:'34px', 
+                      width:'34px'
+                    }}  
+                  />
+                </a>
+              </li>
+      
+              <li style={{display: 'flex', justifyContent: 'space-between'}}>
+                Add to Favorites
+                <AddBoxIcon fontSize='large' style={{transform: 'Translate(0, -10px)'}}/>
+              </li>
+            </ul>
+          </AccordionDetails>
+
       </Accordion>
         <button className="play-button" onClick={() => toggle()}>
           {value ? <StopIcon /> : <PlayArrowIcon />}

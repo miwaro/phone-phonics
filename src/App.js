@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import RingtonePage from "./components/Ringtones/Ringtones";
 import TextPage from "./components/TextAlertPage/TextAlerts";
 import AboutPage from "./components/About/About";
+import FavoritesPage from "./components/FavoritesPage/Favorites";
 
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
       <Header />
         <Route exact path="/" component={RingtonePage} />
         <Route path="/text-alert-page" component={TextPage} />
+        <Route path="/favorites-page" component={FavoritesPage} />
         <Route path="/about-page" component={AboutPage} />
         <Footer />  
     </Router>
