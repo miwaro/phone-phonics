@@ -8,6 +8,7 @@ const Header = () => {
             <div className="header-container">
                 <div id="branding">
                     <h1><span className="highlight">Phone</span><PhoneIcon />Phonics</h1>
+                    <h4>Free Sounds for your phone</h4>
                 </div>
                 <nav>
                     <ul className="highlight">
