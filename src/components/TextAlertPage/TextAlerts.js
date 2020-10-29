@@ -14,6 +14,7 @@ const TextAlertPage = () => {
             title={text.title}
             img={text.img}
             artist={text.artist}
+            site={text.site}
           />
         ))}
       </div>
