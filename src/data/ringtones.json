@@ -1,84 +1,85 @@
 [
     {
         "id": 1,
-        "path": "audio/audioclips/addPlayer.wav",
+        "path": "audio/ringtones/Sober.wav",
         "title": "Sonic Bliss",
         "img": "img/nature.jpg",
-        "artist": "Artist: Michael Rooze"
+        "artist": "Artist: Michael Rooze",
+        "site": "https://soundcloud.com/mikerooze"
     },
     {
         "id": 2,
-        "path": "audio/audioclips/addPlayers.wav",
+        "path": "audio/ringtones/ringtone_totheroh.mp3",
         "title": "Radiant River",
         "img": "img/nature2.jpg",
-        "artist": "Artist: Michael Rooze"
+        "artist": "Artist: Alex Totheroh"
     },
     {
         "id": 3,
-        "path": "audio/audioclips/Sober.wav",
+        "path": "audio/ringtones/ringtone-totheroh2.mp3",
         "title": "Harmonious Monk",
         "img": "img/nature3.jpg",
-        "artist": "Artist: Michael Rooze"
+        "artist": "Artist: Alex Totheroh"
     },
     {
         "id": 4,
-        "path": "audio/audioclips/ringtone_totheroh.mp3",
+        "path": "audio/ringtones/ringtone_totheroh.mp3",
         "title": "Forest Sound",
         "img": "img/nature4.jpg",
         "artist": "Artist: Michael Rooze"
     },
     {
         "id": 5,
-        "path": "audio/audioclips/ringtone-totheroh2.mp3",
+        "path": "audio/ringtones/ringtone-totheroh2.mp3",
         "title": "City Calm",
         "img": "img/nature5.jpg",
         "artist": "Artist: Michael Rooze"
     },
     {
         "id": 6,
-        "path": "audio/audioclips/arrow.wav",
+        "path": "audio/ringtones/arrow.wav",
         "title": "Ion Fortress",
         "img": "img/nature6.jpg",
         "artist": "Artist: Michael Rooze"
     },
     {
         "id": 7,
-        "path": "audio/audioclips/arrow.wav",
+        "path": "audio/ringtones/arrow.wav",
         "title": "Ion Fortress",
         "img": "img/nature7.jpg",
         "artist": "Artist: Michael Rooze"
     },
     {
         "id": 8,
-        "path": "audio/audioclips/arrow.wav",
+        "path": "audio/ringtones/arrow.wav",
         "title": "Ion Fortress",
         "img": "img/nature8.jpg",
         "artist": "Artist: Michael Rooze"
     },
     {
         "id": 9,
-        "path": "audio/audioclips/arrow.wav",
+        "path": "audio/ringtones/arrow.wav",
         "title": "Ion Fortress",
         "img": "img/nature9.jpg",
         "artist": "Artist: Michael Rooze"
     },
     {
         "id": 10,
-        "path": "audio/audioclips/arrow.wav",
+        "path": "audio/ringtones/arrow.wav",
         "title": "Ion Fortress",
         "img": "img/nature10.jpg",
         "artist": "Artist: Michael Rooze"
     },
     {
         "id": 11,
-        "path": "audio/audioclips/arrow.wav",
+        "path": "audio/ringtones/arrow.wav",
         "title": "Ion Fortress",
         "img": "img/nature11.jpg",
         "artist": "Artist: Michael Rooze"
     },
     {
         "id": 12,
-        "path": "audio/audioclips/arrow.wav",
+        "path": "audio/ringtones/arrow.wav",
         "title": "Ion Fortress",
         "img": "img/nature12.jpg",
         "artist": "Artist: Michael Rooze"

@@ -13,6 +13,8 @@ const RingtonePage = () => {
             path={ringtone.path}
             title={ringtone.title}
             img={ringtone.img}
+            artist={ringtone.artist}
+            site={ringtone.site}
           />
         ))}
       </div>

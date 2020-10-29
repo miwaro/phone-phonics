@@ -35,7 +35,7 @@ const AboutPage = () => {
                 </p>
                 <hr/>
             <h2 className="about-header">Contact Info</h2>
-                <p>For more information about me, my music, or my friends music please email me at mikerooze12@gmail.com</p>
+                <p>For more information about me, my music, or my friends music, please email me at mikerooze12@gmail.com</p>
                 <hr/>
             <div className="about-images">
                 <a  rel="nofollow" href="https://soundcloud.com/mikerooze" target="_blank" ><img className="soundcloud" src="./img/soundcloud.png"  alt="soundcloud"/></a>

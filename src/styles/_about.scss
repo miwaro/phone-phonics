@@ -56,6 +56,11 @@ p {
     margin-top: 0;
     height: 100px;
     width: 100px;
+    &:hover {
+        transform: scale(1.1);
+        border: 2px solid $SecondaryColor;
+        border-radius: 4%;
+      }
 }
 
 .studio {

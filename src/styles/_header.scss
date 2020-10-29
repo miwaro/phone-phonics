@@ -9,7 +9,6 @@ $SecondaryColor: #207db8;
     min-height:70px;
   }
 
-
   .header-container{
     width:70%;
     margin:auto;
@@ -18,7 +17,7 @@ $SecondaryColor: #207db8;
 
   header{
     @include header-footer;
-    border-bottom: $PrimaryColor 3px solid;
+    border-bottom: 3px solid $PrimaryColor;
   }
 
   h4 {
