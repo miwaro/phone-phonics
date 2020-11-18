@@ -71,6 +71,7 @@ $SecondaryColor: #207db8;
   }
   
   footer {
+    display: flex;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgb(5, 0, 102) 0%, rgba(32,125,184,1) 58%, rgb(4, 155, 185) 100%);
     color:#ffffff;
@@ -82,6 +83,13 @@ $SecondaryColor: #207db8;
     }
   }
   
+  .footer-copyright {
+    font-size: 12px;
+    display: flex;
+    align-items: flex-end;
+    justify-items: start;
+  }
+
   /* Media Queries */
   @media(max-width: 768px){
     header #branding,

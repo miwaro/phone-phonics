@@ -1,5 +1,4 @@
 import React, { useState, useCallback } from "react";
-import Button from "@material-ui/core/Button";
 import { NavLink } from "react-router-dom";
 import PlayArrowIcon from "@material-ui/icons/PlayArrow";
 import StopIcon from "@material-ui/icons/Stop";
@@ -66,7 +65,7 @@ const TextCard = (text) => {
           > 
           {text.artist}
           </div>
-          <a rel="nofollow" href={text.site} target="_blank" >
+          <a rel="noopener noreferrer" href={text.site} target="_blank" >
             <img className="soundcloud" src="./img/soundcloud.png" 
             style={{
               height:'40px', width:'40px'

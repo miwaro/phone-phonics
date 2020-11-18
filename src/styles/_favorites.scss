@@ -1,0 +1,26 @@
+.favorites-container {
+    height: 100vh;
+}
+
+.favorites-header {
+    display: flex;
+    justify-content: center;
+}
+
+.favorites-list {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    border: 1px solid $SecondaryColor;
+}
+
+.favorites-button {
+    display: flex;
+    margin: 0 auto;
+}
+
+.add-button:hover {
+    background-color: #ccc;
+    border-radius: 6%;
+}
+

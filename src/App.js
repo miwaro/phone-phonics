@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import RingtonePage from "./components/Ringtones/Ringtones";
 import TextPage from "./components/TextAlertPage/TextAlerts";
 import AboutPage from "./components/About/About";
-import FavoritesPage from "./components/FavoritesPage/Favorites";
+import FavoritesPage from "./components/Favorites/FavoritesPage";
 
 
 export default function App() {

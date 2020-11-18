@@ -2,21 +2,19 @@
     font-size: 20px;
     background-image: url("/img/about-bg3.jpg");
     background-size: cover;
+    height: 100vh;
     background-position: center; 
     padding: 71px;
 }
 
 .about-container {
-    background-color: white;
-    opacity: .8;
+    // background-color: $PrimaryColor;
+    background-color: #10da2b80;
+    opacity: .9;
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
     border-radius: 10px;
-}
-
-hr {
-    color: $PrimaryColor;
 }
 
 p {
@@ -31,16 +29,17 @@ p {
     font-family: Spicy Rice;
     letter-spacing: 4px;
     font-weight: 300;
+    margin: 0 auto;
     color: $SecondaryColor;
-    display: flex;
-    margin: 0;
-    justify-content: center;
 }
 
 .list {
     padding: 15px;
     font-family: Spicy Rice;
-    color: $SecondaryColor;
+    color: #FFF;
+    font-weight: 300;
+    letter-spacing: 1px;
+    background-color: $SecondaryColor;
     font-size: 20px;
     display: flex;
     justify-content: space-around;
@@ -49,23 +48,26 @@ p {
 
 .about-images {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-top: 10px;
 }
 
 .soundcloud {
     margin-top: 0;
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
     &:hover {
         transform: scale(1.1);
-
       }
 }
 
 .studio {
     margin-top: 0;
-    height: 79px;
-    width: 79px;
+    height: 56px;
+    width: 56px;
     padding-top: 8px;
-
+    padding-left: 10px;
+    &:hover {
+        transform: scale(1.1);
+      }
 }

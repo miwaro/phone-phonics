@@ -10,6 +10,7 @@ const RingtonePage = () => {
         {ringtonesJSON.map((ringtone) => (
           <RingtoneCard
             key={ringtone.id}
+            id={ringtone.id}
             path={ringtone.path}
             title={ringtone.title}
             img={ringtone.img}

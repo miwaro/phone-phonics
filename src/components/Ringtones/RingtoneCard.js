@@ -1,5 +1,7 @@
 import React, { useState, useCallback } from "react";
 import { NavLink } from "react-router-dom";
+import Favorites from '../Favorites/Favorites';
+
 import PlayArrowIcon from "@material-ui/icons/PlayArrow";
 import StopIcon from "@material-ui/icons/Stop";
 import Accordion from '@material-ui/core/Accordion';
@@ -7,12 +9,12 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MusicNoteIcon from '@material-ui/icons/MusicNote';
-import AddBoxIcon from '@material-ui/icons/AddBox';
-import { Translate } from "@material-ui/icons";
 
 const RingtoneCard = (ringtone) => {
 
   const [value, setValue] = useState(false);
+  const [titles, setTitles] = useState([]);
+
   const audio = new Audio(ringtone.path);
 
   const toggle = useCallback(() => {
@@ -35,6 +37,13 @@ const RingtoneCard = (ringtone) => {
       setValue(false)
     }
   })
+
+  const addTitleHandler = title => {
+    setTitles(prevTitles => [
+      ...prevTitles,
+      { id: Math.random().toString(), ...title }
+    ]);
+  };
 
   return (
     <div>
@@ -63,7 +72,7 @@ const RingtoneCard = (ringtone) => {
             <ul className='accordion-list'>
               <li style={{transform: 'Translate(0, -30px)'}}>
                 {ringtone.artist}
-                <a rel="nofollow" href={ringtone.site} target="_blank" >
+                <a rel="noopener noreferrer" href={ringtone.site} target="_blank" >
                   <img className="soundcloud" src="./img/soundcloud.png"  alt="soundcloud"
                     style={{
                       transform: 'translate(0, 30px)',
@@ -75,11 +84,7 @@ const RingtoneCard = (ringtone) => {
                   />
                 </a>
               </li>
-      
-              <li style={{display: 'flex', justifyContent: 'space-between'}}>
-                Add to Favorites
-                <AddBoxIcon fontSize='large' style={{transform: 'Translate(0, -10px)'}}/>
-              </li>
+              <Favorites title={ringtone.title} id={ringtone.id} onAddTitle={addTitleHandler}/>
             </ul>
           </AccordionDetails>
 
