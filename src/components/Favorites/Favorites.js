@@ -1,7 +1,18 @@
-import React from 'react';
-import AddBoxIcon from '@material-ui/icons/AddBox';
+import React, { useState } from 'react';
+import SimpleSnackbar from '../toast';
+
+
+function useForceUpdate(){
+    const [value, setValue] = useState(0); 
+    return () => setValue(value => ++value); 
+  } 
 
 const Favorites = (title) => {
+
+    const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    const forceUpdate = useForceUpdate();
+
+
 
     const addTitle = () => {
         let strTitle = title.title;
@@ -15,13 +26,23 @@ const Favorites = (title) => {
         }
     }
 
+    // const removeTitle = (title) => {
+
+    //     if (favorites && favorites.includes(title)) {
+    //         const removedTitle = favorites.filter((val) => val !== title);
+    //         localStorage.setItem('favorites', JSON.stringify(removedTitle));
+
+    //         forceUpdate();
+    //     } 
+    // }
+
     return (
         <div>
             <li style={{display: 'flex', justifyContent: 'space-between'}}>
                 Add to Favorites
-                <AddBoxIcon 
+                <SimpleSnackbar 
                     className='add-button'
-                    onClick={addTitle} 
+                    addTitle={addTitle}
                     fontSize='large' 
                     style={{transform: 'Translate(0, -10px)', cursor: 'pointer'}}/>
             </li>

@@ -9,7 +9,7 @@ function useForceUpdate(){
 } 
 
 const FavoritesPage = () => {
-  
+
     const forceUpdate = useForceUpdate();
     const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
     
@@ -19,9 +19,11 @@ const FavoritesPage = () => {
 
 
     const removeTitle = (title) => {
+
         if (favorites && favorites.includes(title)) {
             const removedTitle = favorites.filter((val) => val !== title);
             localStorage.setItem('favorites', JSON.stringify(removedTitle));
+
             forceUpdate();
         } 
     }
@@ -41,8 +43,11 @@ const FavoritesPage = () => {
                     >
                         Remove
                     </button> 
+                  
+
                 </ul>   
             ))}
+  
 
         </div>
     )
