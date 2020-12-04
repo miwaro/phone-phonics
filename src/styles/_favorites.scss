@@ -1,26 +1,35 @@
 .favorites-container {
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/img/ringtone-bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
     height: 100vh;
+    font-size: large;
 }
 
 .favorites-header {
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
 }
 
 .favorites-list {
+    width: 40vw;
     display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-    border: 1px solid $SecondaryColor;
+    justify-content: space-between;
+    margin: 5px auto;
+    list-style: none;
+    padding: 20px;
+    border: 1px solid $PrimaryColor;
+    background-color: $SecondaryColor;
+    opacity: .8;
 }
 
-.favorites-button {
-    display: flex;
-    margin: 0 auto;
-}
-
-.add-button:hover {
+.save-button:hover {
     background-color: #ccc;
     border-radius: 6%;
+    transform: scale(1.3);
+   
 }
 

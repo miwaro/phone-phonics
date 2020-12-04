@@ -1,14 +1,9 @@
 import React, { useState }from 'react';
-import Button from '@material-ui/core/Button';
 import AddBoxIcon from '@material-ui/icons/AddBox';
-
 import Snackbar from '@material-ui/core/Snackbar';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
-
-
-
-
+import SaveIcon from '@material-ui/icons/Save';
 
 export default function SimpleSnackbar(props) {
 
@@ -30,7 +25,13 @@ export default function SimpleSnackbar(props) {
 
   return (
     <div>
-      <AddBoxIcon onClick={() => handleClick(props.title)}>Remove Title</AddBoxIcon>
+      <SaveIcon 
+        className='save-button'
+        size="large"
+        onClick={() => handleClick(props.title)}>
+          Remove Title 
+      </SaveIcon>
+
       <Snackbar
         className='snack-bar'
         anchorOrigin={{
@@ -38,9 +39,9 @@ export default function SimpleSnackbar(props) {
           horizontal: 'left'
         }}
         open={open}
-        autoHideDuration={6000}
+        autoHideDuration={2000}
         onClose={handleClose}
-        message="Added to Favorties Page"
+        message="Added to Favorties Page!"
         action={
           <React.Fragment>
             <IconButton size="small" aria-label="close" color="inherit" onClick={handleClose}>

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Button from '@material-ui/core/Button';
 
 
 const ringtonesJSON = require("../../data/ringtones.json");
@@ -25,30 +26,34 @@ const FavoritesPage = () => {
             localStorage.setItem('favorites', JSON.stringify(removedTitle));
 
             forceUpdate();
-        } 
+        }
     }
 
     return (
         <div className='favorites-container'>
             <h1 className='favorites-header'>Favorites</h1>
 
+    { !favorites || favorites.length === 0 ? <p>Please Navigate to Ringtone or Text Alert Page to add a Favorite!</p> : <p></p>}
+
+
             {filtered.map((ringtone) => (
                 <ul className='favorites-list' key={ringtone.id}>
                     <li>
                         {ringtone.title}    
                     </li>
-                    <button
+                    <Button
+                        variant="contained"
+                        color="primary"
                         className='favorites-button'
                         onClick={() => removeTitle(ringtone.title)}
                     >
                         Remove
-                    </button> 
+                    </Button> 
                   
 
                 </ul>   
             ))}
   
-
         </div>
     )
 }

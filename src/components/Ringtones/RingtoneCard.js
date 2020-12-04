@@ -73,13 +73,13 @@ const RingtoneCard = (ringtone) => {
               <li style={{transform: 'Translate(0, -30px)'}}>
                 {ringtone.artist}
                 <a rel="noopener noreferrer" href={ringtone.site} target="_blank" >
-                  <img className="soundcloud" src="./img/soundcloud.png"  alt="soundcloud"
+                  <img className= 'soundcloud' src="./img/soundcloud.png"  alt="soundcloud"     
                     style={{
                       transform: 'translate(0, 30px)',
                       paddingLeft: 10,
                       paddingBottom: 20,
-                      height:'34px', 
-                      width:'34px'
+                      height:'28px', 
+                      width:'28px'
                     }}  
                   />
                 </a>

@@ -1,18 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import SimpleSnackbar from '../toast';
 
-
-function useForceUpdate(){
-    const [value, setValue] = useState(0); 
-    return () => setValue(value => ++value); 
-  } 
-
 const Favorites = (title) => {
-
-    const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
-    const forceUpdate = useForceUpdate();
-
-
 
     const addTitle = () => {
         let strTitle = title.title;
@@ -26,20 +15,10 @@ const Favorites = (title) => {
         }
     }
 
-    // const removeTitle = (title) => {
-
-    //     if (favorites && favorites.includes(title)) {
-    //         const removedTitle = favorites.filter((val) => val !== title);
-    //         localStorage.setItem('favorites', JSON.stringify(removedTitle));
-
-    //         forceUpdate();
-    //     } 
-    // }
-
     return (
         <div>
             <li style={{display: 'flex', justifyContent: 'space-between'}}>
-                Add to Favorites
+                Save to Favorites
                 <SimpleSnackbar 
                     className='add-button'
                     addTitle={addTitle}
