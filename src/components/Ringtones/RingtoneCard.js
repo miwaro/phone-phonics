@@ -18,8 +18,8 @@ const RingtoneCard = (ringtone) => {
   const audio = new Audio(ringtone.path);
 
   const toggle = useCallback(() => {
-      toggleAudio();
-      setValue((v) => !v);
+    toggleAudio();
+    setValue((v) => !v);
   }, []);
 
   const toggleAudio = () => {
@@ -32,7 +32,7 @@ const RingtoneCard = (ringtone) => {
     }
   }
 
-  audio.addEventListener("ended", function() {
+  audio.addEventListener("ended", function () {
     if ("ended") {
       setValue(false)
     }
@@ -49,46 +49,46 @@ const RingtoneCard = (ringtone) => {
     <div>
       <div className="ringtone-container">
         <img src={ringtone.img} alt="nature" />
-        <Accordion  
+        <Accordion
           style={{
-              position: "absolute",
-              borderRadius: 6,
-              top: 15,
-              left: 15,
-              opacity: .8,
-              fontStyle: "italic",
-              border: '1px solid #207db8'
-            }}>
+            position: "absolute",
+            borderRadius: 6,
+            top: 15,
+            left: 15,
+            opacity: .8,
+            fontStyle: "italic",
+            border: '1px solid #207db8'
+          }}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <MusicNoteIcon fontSize='small'/>
+            <MusicNoteIcon fontSize='small' />
             {ringtone.title}
           </AccordionSummary>
 
-          <AccordionDetails style={{paddingTop: 0, paddingBottom: 0}}>
+          <AccordionDetails style={{ paddingTop: 0, paddingBottom: 0 }}>
             <ul className='accordion-list'>
-              <li style={{transform: 'Translate(0, -30px)'}}>
+              <li style={{ transform: 'Translate(0, -30px)' }}>
                 {ringtone.artist}
                 <a rel="noopener noreferrer" href={ringtone.site} target="_blank" >
-                  <img className= 'soundcloud' src="./img/soundcloud.png"  alt="soundcloud"     
+                  <img className='soundcloud' src="./img/soundcloud.png" alt="soundcloud"
                     style={{
                       transform: 'translate(0, 30px)',
                       paddingLeft: 10,
                       paddingBottom: 20,
-                      height:'28px', 
-                      width:'28px'
-                    }}  
+                      height: '28px',
+                      width: '28px'
+                    }}
                   />
                 </a>
               </li>
-              <Favorites title={ringtone.title} id={ringtone.id} onAddTitle={addTitleHandler}/>
+              <Favorites title={ringtone.title} id={ringtone.id} onAddTitle={addTitleHandler} />
             </ul>
           </AccordionDetails>
 
-      </Accordion>
+        </Accordion>
         <button className="play-button" onClick={() => toggle()}>
           {value ? <StopIcon /> : <PlayArrowIcon />}
         </button>

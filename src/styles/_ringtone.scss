@@ -8,7 +8,7 @@
 
 .main-text-container {
   padding-top: 40px;
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/img/text-bg.jpg");
+  // background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/img/text-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 40px;
@@ -45,6 +45,7 @@
   border: 2px solid #FFF;
   border-radius: 4%;
   box-shadow: 5px 10px 18px #020024;
+  transition:.4s;
   &:hover {
     transform: scale(1.02);
     border: 3px solid $SecondaryColor;
@@ -70,6 +71,8 @@
   width: 320px;
   border: 2px solid #FFF;
   border-radius: 4%;
+  transition:.4s;
+
   &:hover {
     transform: scale(1.02);
     border: 3px solid $SecondaryColor;
@@ -110,6 +113,8 @@ img {
   border-radius: 50%;
   padding: 25px;
   cursor: pointer;
+  transition:.3s;
+
   &:hover {
     transform: scale(1.1);
     border: 2px solid $PrimaryColor;
@@ -131,10 +136,11 @@ img {
   border: 1px solid #FFF;
   font-size: 20px;
   color: #fff;
+  transition:.3s;
   background: rgba(64, 127, 199, 0.1);
   &:hover {
     opacity: 1;
-    border: 2px solid $SecondaryColor;
+    border: 2px solid $PrimaryColor;
   }
   @media only screen and (max-width: 1050px) {
     bottom: 20px;

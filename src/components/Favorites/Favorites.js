@@ -6,7 +6,7 @@ const Favorites = (title) => {
     const addTitle = () => {
         let strTitle = title.title;
         const favorites = JSON.parse(localStorage.getItem('favorites'));
-        if ( favorites && !favorites.includes(strTitle)) {
+        if (favorites && !favorites.includes(strTitle)) {
             favorites.push(strTitle);
             localStorage.setItem('favorites', JSON.stringify(favorites));
         } else {
@@ -17,13 +17,13 @@ const Favorites = (title) => {
 
     return (
         <div>
-            <li style={{display: 'flex', justifyContent: 'space-between'}}>
+            <li style={{ display: 'flex', justifyContent: 'space-between' }}>
                 Save to Favorites
-                <SimpleSnackbar 
+                <SimpleSnackbar
                     className='add-button'
                     addTitle={addTitle}
-                    fontSize='large' 
-                    style={{transform: 'Translate(0, -10px)', cursor: 'pointer'}}/>
+                    fontSize='large'
+                    style={{ transform: 'Translate(0, -10px)', cursor: 'pointer' }} />
             </li>
         </div>
     )
