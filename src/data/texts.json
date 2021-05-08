@@ -57,11 +57,10 @@
     },
     {
         "id": 8,
-        "path": "audio/texts/arrow.wav",
-        "title": "Ion Fortress",
+        "path": "audio/texts/everybodyDanceText.wav",
+        "title": "Everybody Dance Now",
         "img": "img/nature5.jpg",
-        "artist": "Artist: Michael Rooze",
-        "site": "https://soundcloud.com/mikerooze"
+        "artist": "Artist: C & C Music Factory"
     },
     {
         "id": 9,
